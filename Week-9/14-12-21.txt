@@ -1,0 +1,16 @@
+Await operator used to wait for prgm
+
+<script>
+function resolveafter2seconds()
+{
+return Promise(function (resolve){
+    setTimeout(function()
+     {
+     resolve('b');
+     },2000);})
+}
+
+async function asynCall(){
+console.log("calling");
+const.result=await resolveafter2seconds()
+{
